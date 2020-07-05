@@ -210,7 +210,8 @@ ul {
 }
 
 .misc-text-wrapper {
-    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .misc-text-wrapper a {
