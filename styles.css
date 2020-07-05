@@ -229,7 +229,6 @@ ul {
 * {box-sizing:border-box}
 
 .slideshow-container {
-  max-width: 1080px;
   position: relative;
   margin: auto;
   padding-top: 30px;
