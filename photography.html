@@ -3,23 +3,24 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <title>Photography - Jenna Z Art & Design</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Z-favicon.ico" />
+    <title>Photography - Jenna Zielinski Art</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
         <div class="nav-wrapper">
+
             <div class="right-side">
                 <div class="name-wrapper">
-                    <a href="index.html"><img src="images/FullLogo.png" ; height=60px></a>
+                    <a href="index.html"><img src="images/FullLogo-New.png" ; height=28px></a>
                 </div>
             </div>
 
             <div class="left-side">
-                <div class="nav-link-wrapper">
+                <div class="nav-link-wrapper active-nav-link">
                     <a href="index.html">Home</a>
                 </div>
 
@@ -35,6 +36,8 @@
                     <a href="commissions.html">Commissions</a>
                 </div>
             </div>
+
+
         </div>
 
         <!-- Container for the image gallery -->
@@ -78,7 +81,8 @@
 
         <div class="demo-align">
             <div class="demo-container">
-                <img class="demo cursor" src="images/cake.jpg" style="object-position: -30px 0px;" onclick="currentSlide(1)" >
+                <img class="demo cursor" src="images/cake.jpg" style="object-position: -30px 0px;"
+                    onclick="currentSlide(1)">
             </div>
             <div class="demo-container">
                 <img class="demo cursor" src="images/sushi.jpg" onclick="currentSlide(2)">
@@ -88,7 +92,8 @@
                     onclick="currentSlide(3)">
             </div>
             <div class="demo-container">
-                <img class="demo cursor" src="images/camera.jpg" style="object-position: -45px 0px;" onclick="currentSlide(4)">
+                <img class="demo cursor" src="images/camera.jpg" style="object-position: -45px 0px;"
+                    onclick="currentSlide(4)">
             </div>
             <div class="demo-container">
                 <img class="demo cursor" src="images/scenery.jpg" onclick="currentSlide(5)">
@@ -130,7 +135,7 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
             captionText.innerHTML = dots[slideIndex - 1].alt;
-        } 
+        }
     </script>
 
 

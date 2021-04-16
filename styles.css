@@ -2,7 +2,9 @@
 
 body {
     margin: 0px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "soleil", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .container {
@@ -12,32 +14,32 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #931c68;
+    color: #000000;
 }
 
 h2 {
     font-size: 24px;
-    color: #931c68;
+    color: #000000;
     padding-top: 50px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #931c68;
+    border-bottom: 1px solid #000000;
 }
 
 h3 {
     font-weight: bold; 
     font-size: 20px; 
     padding-top: 30px;
-    color: #931c68;
+    color: #000000;
 }
 
 p {
     font-size: 16px;
-    color: #aa5383;
+    color: #000000;
 }
 
 ul {
     font-size: 16px;
-    color: #aa5383;
+    color: #000000;
     margin-top: -3px;
 }
 
@@ -69,7 +71,7 @@ ul {
 .nav-wrapper > .left-side > div {
     margin-top: 20px;
     margin-right: 20px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-transform: uppercase;
 }
 
@@ -80,26 +82,26 @@ ul {
 }
 
 .nav-link-wrapper a {
-    color: #aa5383;
+    color: #000000;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid #931c68;
+    border-bottom: 1px solid #000000;
 }
 
 .nav-link-wrapper a:hover {
-    color: #931c68;
+    color: #000000;
 }
 
 .active-nav-link {
-    border-bottom: 1px solid #931c68;
+    border-bottom: 1px solid #000000;
 }
 
 .active-nav-link a {
-    color: #931c68 !important;
+    color: #000000 !important;
 }
 
 /* Portfolio Styles */
@@ -152,15 +154,15 @@ ul {
 
 .img-text-wrapper .subtitle {
     transition: 1s;
-    font-weight: 900;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 25px;
     color: transparent;
     
 }
 
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
-    color: #931c68;
+    color: #000000;
 }
 
 .img-text-wrapper .subsubtitle {
@@ -174,7 +176,7 @@ ul {
 }
 
 .img-text-wrapper:hover .subsubtitle {
-    color: #aa5383;
+    color: #000000;
 }
 
 .img-darken {
@@ -215,14 +217,14 @@ ul {
 }
 
 .misc-text-wrapper a {
-    color:#aa5383;
+    color:#000000;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     font-weight: bold;
 }
 
 .misc-text-wrapper a:hover {
-    border-bottom: 1px solid #931c68;
+    border-bottom: 1px solid #000000;
 }
 
 /* Addiction Slideshow */
@@ -258,11 +260,11 @@ ul {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgb(170, 83, 131,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .numbertext {
-  color: #aa5383;
+  color: #000000;
   font-size: 14px;
   padding: 10px;
   position: absolute;
@@ -274,14 +276,14 @@ ul {
   height: 10px;
   width: 10px;
   margin: 0 5px;
-  background-color: #aa5383;
+  background-color: #000000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #931c68;
+  background-color: #000000;
 }
 
 .fade {
