@@ -40,135 +40,138 @@
 
         </div>
 
-        <!-- Container for the image gallery -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <img src="images/PNGs/Hot Air Balloon.png" style="width:800px">
+        <!-- Images used to open the lightbox -->
+        <div class="slidesflex">
+
+            <div class="slideflex">
+                <img src="images/PNGs/Hot Air Balloon.png" style="width:100%" onclick="openModal();currentSlide(1)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Free Flying Feeling-1.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images/PNGs/Free Flying Feeling-1.png" style="width:100%" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images//PNGs/Angel.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images//PNGs/Angel.png" style="width:100%" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Butterflies.png" style="width:450px">
-            </div>
-            <div class="mySlides">
-                <img src="images/PNGs/flying camel.png" style="width:450px">
+            <div class="slideflex">
+                <img src="images//PNGs/PlaneWindow.png" style="width:100%" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/PlaneWindow.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images/PNGs/Butterflies.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images//PNGs/Sleigh.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images/PNGs/flying camel.png" style="width:100%" onclick="openModal();currentSlide(6)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Fly By the Seat of My Pants.png" style="width:800px">
-            </div>
-            <div class="mySlides">
-                <img src="images//PNGs/Cheerleader-modifiedtype.png" style="width:450px">
+            <div class="slideflex">
+                <img src="images/PNGs/Flying yoga-1.png" style="width:100%" onclick="openModal();currentSlide(7)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Venus Fly Trap.png" style="width:450px">
+            <div class="slideflex">
+                <img src="images//PNGs/Cheerleader-modifiedtype.png" style="width:100%" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Flying yoga-1.png" style="width:450px">
-            </div>
-            <div class="mySlides">
-                <img src="images/PNGs/Fear of Heights.png" style="width:800px">
-            </div>
-            <div class="mySlides">
-                <img src="images//PNGs/Flight Ticket.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images//PNGs/Sleigh.png" style="width:100%" onclick="openModal();currentSlide(9)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Fly Agaric.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images/PNGs/Fly By the Seat of My Pants.png" style="width:100%" onclick="openModal();currentSlide(10)"
+                    class="hover-shadow">
             </div>
 
-            <div class="mySlides">
-                <img src="images/PNGs/Sparks Fly.png" style="width:800px">
+            <div class="slideflex">
+                <img src="images/PNGs/Geese.png" style="width:100%" onclick="openModal();currentSlide(11)"
+                    class="hover-shadow">
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
+            <div class="slideflex">
+                <img src="images/PNGs/Flight Ticket.png" style="width:100%" onclick="openModal();currentSlide(12)"
+                    class="hover-shadow">
             </div>
+
 
         </div>
 
-        <div class="demo-align">
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Hot Air Balloon.png" onclick="currentSlide(1)"
-                    alt="Hot Air Balloons">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Free Flying Feeling-1.png" style="object-position: 0% 0px;"
-                    onclick="currentSlide(2)" alt="Free Feeling of Flying">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Angel.png" onclick="currentSlide(3)" alt="Angel">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Butterflies.png" onclick="currentSlide(4)" alt="Butterflies">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/flying camel.png" onclick="currentSlide(5)"
-                    alt="Figure Skating - Flying Camel">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/PlaneWindow.png" onclick="currentSlide(6)" alt="Plane Window">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Sleigh.png" onclick="currentSlide(7)" alt="Santa's Sleigh">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Fly By the Seat of My Pants.png" onclick="currentSlide(8)"
-                    alt="Fly by the Seat of My Pants">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Cheerleader-modifiedtype.png" onclick="currentSlide(9)"
-                    alt="Cheerleading - Flyer">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Venus Fly Trap.png" onclick="currentSlide(10)"
-                    alt="Venus Fly Trap">
-            </div><br>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Flying yoga-1.png" onclick="currentSlide(11)"
-                    alt="Flying Yoga">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Fear of Heights.png" onclick="currentSlide(12)"
-                    alt="Fear of Heights (Pencil illustration on paper with superimposed photgraph)">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Flight Ticket.png" onclick="currentSlide(13)"
-                    alt="Flight Ticket">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Fly Agaric.png" onclick="currentSlide(14)" alt="Fly Agaric">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/PNGs/Sparks Fly.png" onclick="currentSlide(15)" alt="Sparks Fly">
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Hot Air Balloon.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Free Flying Feeling-1.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images//PNGs/Angel.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/PlaneWindow.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Butterflies.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/flying camel.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Flying yoga-1.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images//PNGs/Cheerleader-modifiedtype.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images//PNGs/Sleigh.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Fly By the Seat of My Pants.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Geese.png">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/PNGs/Flight Ticket.png">
+                </div>
+
+
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
             </div>
         </div>
 
-        <div class="vert-flex-wrapper">
-            <p style="padding-bottom: 50px; margin-top: -25px; font-size: 0.75em">All images were created using a
-                Wacom Intuos Pro tablet and Adobe Photoshop.</p>
-        </div>
         <div class="vert-flex-wrapper">
             <div class="misc-text-wrapper">
                 <h2>Project Overview</h2>
@@ -180,46 +183,53 @@
                 <h3>The Goal</h3>
                 <p style="padding-bottom:200px">Iteration is a vital part of the design process. This project challenged
                     us to push the boundaries of our creativity and visually interpret a single subject or topic in 100
-                    different ways. I chose the word "Fly." I have selected 15 of my favourite iterations from the project.
+                    different ways. I chose the word "Fly." I have selected 12 of my favourite iterations from the project.
 
             </div>
         </div>
-    </div>
-    </div>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        <script>
+            // Open the Modal
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
 
+            // Close the Modal
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlidess");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
 
 </body>
 
