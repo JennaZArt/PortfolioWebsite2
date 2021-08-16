@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="images/Z-favicon.ico" />
+    <title>Illustrations - Jenna Zielinski Art</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="right-side">
+                <div class="name-wrapper">
+                    <a href="index.html"><img src="images/FullLogo-New.png" ; height=28px></a>
+                </div>
+            </div>
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="commissions.html">Commissions</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Container for the image gallery -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <img src="images/sakurapengu.jpg" style="width:600px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/FranColoured.png" style="width:600px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/AC.jpg" style="width:600px">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/mermaidsig.jpg" style="width:400px">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+        </div>
+
+        <div class="demo-align">
+            <div class="demo-container">
+                <img class="demo cursor" src="images/sakurapengu.jpg" onclick="currentSlide(1)"
+                    alt="Requested fan art based on Riot Games' Sakura Pengu character.">
+            </div>
+            <div class="demo-container">
+                <img class="demo cursor" src="images/FranColoured.png" onclick="currentSlide(2)"
+                    alt="Portrait Request.">
+            </div>
+            <div class="demo-container">
+                <img class="demo cursor" src="images/AC.jpg" onclick="currentSlide(3)"
+                    alt="Reinterpretation of the player character from the game Animal Crossing.">
+            </div>
+            <div class="demo-container">
+                <img class="demo cursor" src="images/mermaidsig.jpg" style="object-position: 0% 0px;"
+                    onclick="currentSlide(4)" alt="Mermaid inspired character.">
+            </div>
+        </div>
+
+        <div class="vert-flex-wrapper">
+            <p style="padding-bottom: 50px; margin-top: -25px; font-size: 0.75em">All illustrations were created using a
+                Wacom Intuos Pro tablet and Adobe Photoshop.</p>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+</body>
+
+</html>
