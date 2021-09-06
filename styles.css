@@ -405,3 +405,17 @@ ul {
     cursor: pointer;
   } 
 
+  .infosflex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.infoflex {
+    position: relative;
+    transition: 1s;
+    padding: 25px;
+}
+

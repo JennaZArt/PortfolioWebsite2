@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 
+
+
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="images/Z-favicon.ico" />
-    <title>Illustrations - Jenna Zielinski Art</title>
+    <title>Jenna Zielinski Art</title>
     <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>$(document).mouseup(function (e) {
+            if ($(e.target).parents('.modal-content').length == 0 && !$(e.target).is('.modal-content')) {
+                $('.modal').css('display', 'none');
+            }
+        });</script>
 </head>
 
 <body>
@@ -40,92 +48,85 @@
 
         </div>
 
-        <!-- Container for the image gallery -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <img src="images/sakurapengu.jpg" style="width:600px">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/FranColoured.png" style="width:600px">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/AC.jpg" style="width:600px">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/mermaidsig.jpg" style="width:400px">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
+        <div class="vert-flex-wrapper">
+            <h1>Course Selection Infographics</h1><p style="text-align: center; margin-top: 0%;">(Click to Open in New Tab)</p>
         </div>
+        <!-- Images used to open the lightbox -->
+        <div class="infosflex">
+            <div class="infoflex">
+                <img src="images/CMASImages/CommunicationsClick.png" style="width:100%"
+                    onclick="window.open('images/CMASImages/CommunicationCoursesInfographic.png', '_blank')"
+                    class="hover-shadow">
+            </div>
 
-        <div class="demo-align">
-            <div class="demo-container">
-                <img class="demo cursor" src="images/sakurapengu.jpg" onclick="currentSlide(1)"
-                    alt="Requested fan art based on Riot Games' Sakura Pengu character.">
+            <div class="infoflex">
+                <img src="images/CMASImages/MediaArtsClick.png" style="width:100%"
+                    onclick="window.open('images/CMASImages/MediaArtsCoursesInfographic-Updated.png', '_blank')"
+                    class="hover-shadow">
             </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/FranColoured.png" onclick="currentSlide(2)"
-                    alt="Portrait Request.">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/AC.jpg" onclick="currentSlide(3)"
-                    alt="Reinterpretation of the player character from the game Animal Crossing.">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/mermaidsig.jpg" style="object-position: 0% 0px;"
-                    onclick="currentSlide(4)" alt="Mermaid inspired character.">
+
+            <div class="infoflex">
+                <img src="images/CMASImages/CombinedClick.png" style="width:100%"
+                    onclick="window.open('images/CMASImages/CombinedCoursesInfographic-Long.png', '_blank')" ;
+                    class="hover-shadow">
             </div>
         </div>
 
         <div class="vert-flex-wrapper">
-            <p style="padding-bottom: 50px; margin-top: -25px; font-size: 0.75em">All illustrations were created using a
-                Wacom Intuos Pro tablet and Adobe Photoshop.</p>
+            <div class="misc-text-wrapper">
+                <h2>Overview</h2>
+                <p style="padding-top:10px; padding-bottom:200px">Organization: The Communications & Media Arts Society (McMaster University)
+                    <br>Position: Graphic Designer
+                    <br>Software: Adobe Photoshop, Adobe Illustrator, Adobe InDesign
+                    <br>Equipment: Wacom Intuos Pro Tablet
+                </p>
+               <!--<h3>The Goal</h3>
+                 <p style="padding-bottom:200px">Projects Info -->
+
+            </div>
         </div>
-    </div>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
 
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        <script>
+            function openModal() {
+                document.getElementById('myModal').style.display = "block";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
 
+            function closeModal() {
+                document.getElementById('myModal').style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlidess");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+
+        </script>
 
 </body>
 
