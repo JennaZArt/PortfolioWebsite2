@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="images/Z-favicon.ico" />
+    <title>Time Tonic - Jenna Zielinski Art</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+                    <div class="tt-title">
+                        <div class="tt-title-link-wrapper">
+                            <a href="timetonic.html">Time Tonic</a>
+                        </div>
+                    </div>
+
+        <div class="portfolio-items-wrapper">
+
+            <a href="1960s.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="tt-portfolio-img-background" style="background-image:url(images/1960s-Mockup.png);"></div>
+
+                    <div class="img-text-wrapper">
+
+
+
+                        <div class="subtitle">
+                            1960s
+                            <div class="subsubtitle">Psychedelia</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="1970s.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="tt-portfolio-img-background" style="background-image:url(images/1970s-Mockup.png)"></div>
+
+                    <div class="img-text-wrapper">
+
+
+                        <div class="subtitle">
+                            1970s
+                            <div class="subsubtitle">Postmodernism</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            <a href="1980s.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="tt-portfolio-img-background" style="background-image:url(images/1980s-Mockup.png)"></div>
+
+                    <div class="img-text-wrapper">
+
+
+
+                        <div class="subtitle">
+                            1980s
+                            <div class="subsubtitle">Memphis Style</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </a>
+
+
+            <a href="1990s.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="tt-portfolio-img-background"
+                        style="background-image:url(images/1990s-Mockup.png)"></div>
+
+                    <div class="img-text-wrapper">
+
+
+                        <div class="subtitle">
+                            1990s
+                            <div class="subsubtitle">Minimalism</div>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <a href="2000s.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="tt-portfolio-img-background" style="background-image:url(images/2000s-Mockup.png)"></div>
+
+                    <div class="img-text-wrapper">
+
+
+                        <div class="subtitle">
+                            2000s
+                            <div class="subsubtitle">Y2K</div>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="2010s.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="tt-portfolio-img-background" style="background-image:url(images/2010s-Mockup.png)"></div>
+
+                    <div class="img-text-wrapper">
+
+
+                        <div class="subtitle">
+                            2010s
+                            <div class="subsubtitle">Vintage Style</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    </div>
+    <p style="padding-bottom:200px"></p>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+
+</script>
+
+</html>

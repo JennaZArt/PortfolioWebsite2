@@ -56,6 +56,21 @@ ul {
     padding-left: 30px;
 }
 
+.tt-title {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: bold;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.tt-title-link-wrapper a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
 /* Nav Styles */
 
 .nav-wrapper {
@@ -127,6 +142,16 @@ ul {
     background-repeat: no-repeat;
     opacity: 100%;
     transition: 0.75s;
+}
+
+.tt-portfolio-img-background {
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 100%;
+  transition: 0.75s;
 }
 
 .img-text-wrapper {
