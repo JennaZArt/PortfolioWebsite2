@@ -1,12 +1,12 @@
-const url = 'https://script.google.com/macros/s/AKfycbxZjUtxWXzV7Yg8-Gugho9jfsoK4jwESpHze7kiVHoJI8PwRgLx2F9ymMqN7HL7Ulxo-A/exec';
+const url = 'https://script.google.com/macros/s/AKfycbyjMiT0yYovcfe1VVwYm14jOlsN94r6U4W0tcWNu4p0UrOOUlh3plRVE-mkSIyVegc_cg/exec';
 
 const myForm = document.querySelector('#myForm');
 
-const myName = document.querySelector('#name');
+const myName = document.querySelector('#Name');
 
-const myEmail = document.querySelector('#email');
+const myEmail = document.querySelector('#Email');
 
-const myMessage = document.querySelector('#message');
+const myMessage = document.querySelector('#Message');
 
 myName.value = 'Jenna Zielinski';
 
@@ -64,11 +64,11 @@ function submitter(e) {
 
         const myObj = {
 
-            name: myName.value,
+            Name: myName.value,
 
-            email: myEmail.value,
+            Email: myEmail.value,
 
-            message: myMessage.value
+            Message: myMessage.value
 
         };
 
