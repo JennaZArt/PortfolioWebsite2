@@ -2,9 +2,11 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/Z-favicon.ico" />
-    <title>Illustrations - Jenna Zielinski Art</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Jenna Z Graphic Design</title>
     <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,13 +15,13 @@
     <div class="container">
         <div class="nav-wrapper">
 
-            <div class="right-side">
+            <div class="left-side">
                 <div class="name-wrapper">
-                    <a href="index.html"><img src="images/FullLogo-New.png" ; height=28px></a>
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
                 </div>
             </div>
 
-            <div class="left-side">
+            <div class="right-side">
                 <div class="nav-link-wrapper">
                     <a href="index.html">Home</a>
                 </div>
@@ -32,120 +34,187 @@
                     <a href="contact.html">Contact</a>
                 </div>
 
-                <div class="nav-link-wrapper">
-                    <a href="commissions.html">Commissions</a>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="illustrations.html">Illustrations</a>
                 </div>
             </div>
+        </div>
 
+
+        <!-- Images used to open the lightbox -->
+        <div class="slidesflex">
+
+            <style>
+                
+            </style>
+
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/NeonLights.png"
+                    onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Photo reference by Thaís Silva">
+                <p style="font-size: 0.75em; margin-top: 0px;"><a href="https://www.pexels.com/photo/lying-woman-inside-dark-room-2204724/" style="font-weight: lighter;" target="_blank">Photo reference by Thaís
+                        Silva</a></p>
+                </a>
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/FranColoured.png" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/Jungkook.png" style="object-position: 0px -30px;" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/Jon.jpg" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/sakurapengu.jpg" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/Flying yoga.png" onclick="openModal();currentSlide(6)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/Devil Homura.png" onclick="openModal();currentSlide(7)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/Free Flying Feeling.png" style="object-position: -20px 0px;" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow">
+            </div>
+
+            <div class="squareslideflex">
+                <img src="images/Illustrations/ACTransparent.png" onclick="openModal();currentSlide(9)"
+                    class="hover-shadow">
+            </div>
 
         </div>
 
-        <!-- Container for the image gallery -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <img src="images/sakurapengu.jpg" style="width:600px">
-            </div>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
 
-            <div class="mySlides">
-                <img src="images/Jungkook.png" style="width:500px">
-            </div>
+            <div class="modal-content">
 
-            <div class="mySlides">
-                <img src="images/NeonLights.png">
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/NeonLights.png">
+                </div>
 
-            <div class="mySlides">
-                <img src="images/FranColoured.png" style="width:600px">
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/FranColoured.png">
+                </div>
 
-            <div class="mySlides">
-                <img src="images/AC.jpg" style="width:600px">
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/Jungkook.png">
+                </div>
 
-            <div class="mySlides">
-                <img src="images/mermaidsig.jpg" style="width:400px">
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/Jon.jpg">
+                </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/sakurapengu.jpg">
+                </div>
 
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/Flying yoga.png">
+                </div>
 
-        </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/Devil Homura.png">
+                </div>
 
-        <div class="demo-align">
-            <div class="demo-container">
-                <img class="demo cursor" src="images/sakurapengu.jpg" onclick="currentSlide(1)"
-                    alt="Requested fan art based on Riot Games' Sakura Pengu character.">
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/Free Flying Feeling.png">
+                </div>
 
-            <div class="demo-container">
-                <img class="demo cursor" src="images/Jungkook.png" onclick="currentSlide(2)"
-                    alt="Portrait of BTS' Jungkook.">
-            </div>
+                <div class="mySlidess">
+                    <img class="demo" src="images/Illustrations/ACTransparent.png" style="background-color: rgb(255, 241, 227, 0.9)">
+                </div>
 
-            <div class="demo-container">
-                <img class="demo cursor" src="images/NeonLights.png" onclick="currentSlide(3)"
-                    alt="">
-            </div>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div class="demo-container">
-                <img class="demo cursor" src="images/FranColoured.png" onclick="currentSlide(4)"
-                    alt="Portrait Request.">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/AC.jpg" onclick="currentSlide(5)"
-                    alt="Reinterpretation of the player character from the game Animal Crossing.">
-            </div>
-            <div class="demo-container">
-                <img class="demo cursor" src="images/mermaidsig.jpg" style="object-position: 0% 0px;"
-                    onclick="currentSlide(6)" alt="Mermaid inspired character.">
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption" style="color:rgb(255, 255, 255)"></p>
+                </div>
+
             </div>
         </div>
 
-        <div class="vert-flex-wrapper">
-            <p style="padding-bottom: 50px; margin-top: -25px; font-size: 0.75em">All illustrations were created using a
-                Wacom Intuos Pro tablet and Adobe Photoshop.</p>
-        </div>
-    </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        <script>
+            function openModal() {
+                document.getElementById('myModal').style.display = "block";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
 
+            function closeModal() {
+                document.getElementById('myModal').style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlidess");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+
+        </script>
+
+<button onclick="topFunction()" id="Topbutton" title="Back to top"
+style="background-image: url(images/Branding/Topbutton.png)"></button>
 
 </body>
+
+<script>
+    let mybutton = document.getElementById("Topbutton");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    } 
+</script>
 
 </html>

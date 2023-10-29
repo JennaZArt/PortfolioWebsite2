@@ -4,30 +4,26 @@
 
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/Z-favicon.ico" />
-    <title>Jenna Zielinski Art</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Jenna Z Graphic Design</title>
     <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>$(document).mouseup(function (e) {
-            if ($(e.target).parents('.modal-content').length == 0 && !$(e.target).is('.modal-content')) {
-                $('.modal').css('display', 'none');
-            }
-        });</script>
 </head>
 
 <body>
     <div class="container">
         <div class="nav-wrapper">
 
-            <div class="right-side">
+            <div class="left-side">
                 <div class="name-wrapper">
-                    <a href="index.html"><img src="images/FullLogo-New.png" ; height=28px></a>
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
                 </div>
             </div>
 
-            <div class="left-side">
+            <div class="right-side">
                 <div class="nav-link-wrapper">
                     <a href="index.html">Home</a>
                 </div>
@@ -41,7 +37,7 @@
                 </div>
 
                 <div class="nav-link-wrapper">
-                    <a href="commissions.html">Commissions</a>
+                    <a href="illustrations.html">Illustrations</a>
                 </div>
             </div>
 
@@ -49,36 +45,87 @@
         </div>
 
         <div class="vert-flex-wrapper">
-            <h1>Course Selection Infographics</h1><p style="text-align: center; margin-top: 0%;">(Click to Open in New Tab)</p>
+            <h3 style="margin-top: 30px; text-align: center;">Social Media Posts</h3>
+            <div class="sidebyside">
+                <img src="images/CMAS/MarketingCoverImage-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="images/CMAS/02-Jenna-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="images/CMAS/Exam Send-Off-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="images/CMAS/IndustryNight-small.png" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow">
+                <img src="images/CMAS/SpringSocial-small.png" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow">
+                <img src="images/CMAS/NetflixParty-small.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+
+            <h3 style="text-align: center; margin-bottom: 5px;">Infographics</h3>
+            <p style="font-size: 0.75em; text-align: center; margin-top: 0px; margin-bottom: 20px;">(Click to open in new tab)</p>
+            <div class="sidebyside">
+                <a href="images/CMAS/AcademicRequirements.png" target="_blank"><img src="images/CMAS/AcademicRequirements-small.png"></a>
+                <a href="images/CMAS/MediaArtsCoursesInfographic.png" target="_blank"><img src="images/CMAS/MediaArtsCoursesInfographic-small.png"></a>
+                <a href="images/CMAS/CommunicationCoursesInfographic.png" target="_blank"><img src="images/CMAS/CommunicationCoursesInfographic-small.png"></a>
+            </div>
         </div>
-        <!-- Images used to open the lightbox -->
-        <div class="infosflex">
-            <div class="infoflex">
-                <img src="images/CMASImages/CommunicationsClick.png" style="width:100%"
-                    onclick="window.open('images/CMASImages/CommunicationCoursesInfographic.png', '_blank')"
-                    class="hover-shadow">
-            </div>
 
-            <div class="infoflex">
-                <img src="images/CMASImages/MediaArtsClick.png" style="width:100%"
-                    onclick="window.open('images/CMASImages/MediaArtsCoursesInfographic-Updated.png', '_blank')"
-                    class="hover-shadow">
-            </div>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
 
-            <div class="infoflex">
-                <img src="images/CMASImages/CombinedClick.png" style="width:100%"
-                    onclick="window.open('images/CMASImages/CombinedCoursesInfographic-Long.png', '_blank')" ;
-                    class="hover-shadow">
+            <div class="modal-content">
+
+                <div class="mySlidess">
+                    <img src="images/CMAS/MarketingCoverImage.png" alt="Marketing Team Intro">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/CMAS/02-Jenna.png" alt="CMAS Team Intro Example">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/CMAS/Exam Send-Off.JPG" alt="Exam Send-Off">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/CMAS/IndustryNight.JPG" alt="Industry Night">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/CMAS/SpringSocial.JPG" alt="Spring Social">
+                </div>
+
+                <div class="mySlidess">
+                    <img src="images/CMAS/NetflixParty.JPG" alt="Netflix Party">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption" style="color:rgb(255, 255, 255)"></p>
+                </div>
+
             </div>
         </div>
 
         <div class="vert-flex-wrapper">
             <div class="misc-text-wrapper">
                 <h2>Overview</h2>
-                <p style="padding-top:10px; padding-bottom:200px">Organization: The Communications & Media Arts Society (McMaster University)
-                    <br>Position: Graphic Designer
+                <p>Organization: The Communications & Media Arts Society
+                    <br>Infographic copy by: Landis Clark-Smith
                     <br>Software: Adobe Photoshop, Adobe Illustrator, Adobe InDesign
-                    <br>Equipment: Wacom Intuos Pro Tablet
+                    <br>Equipment: Wacom Intuos Pro
+
+                </p>
+                <p>
+                    <h3>About</h3>
+                    The Communications & Media Arts Society is a club at McMaster University that provides an opportunity for students studying or interested in the fields of Communications and/or Media Arts to network, connect with other students with similar interests, and develop the professional skills required to succeed in their ideal careers. 
+                </p>
+                <p>
+                    <h3>Designs</h3>
+                    As the society's events and content are a combination of fun and professional, I wanted to evoke that feeling in these designs. To achieve this, I included lively patterns, but kept the compositions and shapes simple.
+                    <br><br>
+                    I used a timeline layout for the infographics because the information was in chronological order, making it ideal for this format. The text and icons switch from left to right for each section, which creates movement, making the design more dynamic.
                 </p>
                <!--<h3>The Goal</h3>
                  <p style="padding-bottom:200px">Projects Info -->
@@ -128,6 +175,28 @@
 
         </script>
 
+<button onclick="topFunction()" id="Topbutton" title="Back to top"
+style="background-image: url(images/Branding/Topbutton.png)"></button>
 </body>
+
+<script>
+    let mybutton = document.getElementById("Topbutton");
+    
+    window.onscroll = function () { scrollFunction() };
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+    
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    } 
+    </script>
+    
 
 </html>

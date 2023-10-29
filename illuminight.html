@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Jenna Z Graphic Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="name-wrapper">
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="illustrations.html">Illustrations</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="vert-flex-wrapper">
+            <div class="slideflex" style="padding: 0px">
+            
+                <img src="images/Illuminight/JuravinskiPoster.png" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="modal-content">
+
+                    <div class="mySlidess">
+                        <img src="images/Illuminight/JuravinskiPoster.png">
+                    </div>
+
+                </div>
+            </div>
+            <div class="misc-text-wrapper">
+                <h2>Project Overview</h2>
+                <p>Organization: Hamilton Health Sciences Foundation
+                    <br>Event: Illuminight
+                    <br>Event Logo by: Derek Fryer
+                    <br>Photography by: Josh Carey, Hamilton Health Sciences
+                    <br>Software: Adobe Illustrator, Canva
+                </p>
+                <h3>About</h3>
+                <p>For Illuminight 2022, Hamilton Health Sciences Foundation, alongside the Hamilton Health Sciences team, launched a cancer awareness campaign. The campaign featured five inspiring stories of cancer care at Juravinski Hospital and Cancer Centre. To bring awareness to the campaign, I designed a poster, which had five versions - one for each patient. They were printed and displayed throughout Juravinski Hospital and Cancer Centre.</p>
+
+                <h3>The Goal</h3>
+                <p>The posters should be legible, organized, and feature the photos of the incredible patients. The target audience included those whose lives have personally been affected by cancer or whose loved one(s) have been affected by cancer in any way.
+                </p>
+                <h3>Design</h3>
+                <p>The information on the designs was organized in the following order:
+
+                    <ul>
+                        <li><b>What:</b> Illuminight - Shine a Light on Cancer</li>
+                        <li><b>When:</b> September 22 - October 30</li>
+                        <li><b>Why:</b> To watch inspiring stories of cancer care.</li>
+                        <li><b>How:</b> Scan the QR code or visit the website.</li>
+                        </ul>
+                I created a clear hierarchy of information by making use of colour, font weight, and spacing. As Josh Carey's photography for the campaign was a key element, I wanted to make the photos fairly prominent. I chose to make the photo take up the majority of the space on the left side. To balance this, I allowed the photo to be the sole left-aligned element, and right-aligned the other elements.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlidess");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
+
+<button onclick="topFunction()" id="Topbutton" title="Back to top"
+style="background-image: url(images/Branding/Topbutton.png)"></button>
+</body>
+
+<script>
+let mybutton = document.getElementById("Topbutton");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+} else {
+    mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+} 
+</script>
+
+
+</html>

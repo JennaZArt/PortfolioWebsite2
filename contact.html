@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Z-favicon.ico" />
     <title>Contact - Jenna Zielinski Art</title>
     <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
@@ -12,14 +14,13 @@
 <body>
     <div class="container">
         <div class="nav-wrapper">
-
-            <div class="right-side">
+            <div class="left-side">
                 <div class="name-wrapper">
-                    <a href="index.html"><img src="images/FullLogo-New.png" ; height=28px></a>
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
                 </div>
             </div>
 
-            <div class="left-side">
+            <div class="right-side">
                 <div class="nav-link-wrapper">
                     <a href="index.html">Home</a>
                 </div>
@@ -33,23 +34,85 @@
                 </div>
 
                 <div class="nav-link-wrapper">
-                    <a href="commissions.html">Commissions</a>
+                    <a href="illustrations.html">Illustrations</a>
                 </div>
             </div>
-
-
         </div>
 
-        <div class="vert-flex-wrapper">
-            <p style="padding-top: 50px; max-width: 600px;">If you would like to contact me for any reason including
-                jobs, collaborations, and inquiries, please don't hesitate to send me an email. I look forward to
-                working with you!
-                <br><br>Email: jennazielinski14@gmail.com
-            </p>
 
+
+        <div class="two-column-index-bg">
+            <div class="two-column-index" style="margin-top: 0px;">
+                <style>
+                    @media(max-width :768px) {
+                        .profile-content-wrapper {
+                            margin-bottom: 30px;
+                            padding-top: 30px;
+                        }
+
+                        .two-column-index {
+                            margin-top: 20px;
+                        }
+                    }
+                </style>
+                <div class="profile-content-wrapper" style="width: 350px;">
+                    
+                    <h1 style="font-size: 36px; margin-bottom: -10px; text-align: left">Let's chat</h1>
+                    <p>Fill out the form or email me at <a href="mailto:jennazgraphicdesign@gmail.com">jennazgraphicdesign@gmail.com</a></p>
+                </div>
+                <div class="myForm">
+    
+                    <form id="myForm" onsubmit="sayThanks()">
+    
+                        <h3 style="padding-top: 0px; color: var(--color2);">Send Message</h3>
+    
+                        <div class="formInputs">
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+    
+                        <div class="formInputs">
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+    
+                        <div class="formInputs">
+                            <textarea id="message" placeholder="Message"></textarea>
+                        </div>
+    
+                        <input type="submit" value="Submit">
+                    </form>
+    
+                </div>
+    
+                <script src="app3.js"></script>
+            </div>
         </div>
+
     </div>
+
     </div>
+    
+    <button onclick="topFunction()" id="Topbutton" title="Back to top"
+    style="background-image: url(images/Branding/Topbutton-red.png)"></button>
+
 </body>
+
+<script>
+    let mybutton = document.getElementById("Topbutton");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    } 
+</script>
 
 </html>

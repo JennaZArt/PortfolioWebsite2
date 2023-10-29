@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Jenna Z Graphic Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="name-wrapper">
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="illustrations.html">Illustrations</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="vert-flex-wrapper">
+            <div class="wwslidesflex">
+
+                <div class="slideflex" style="padding: 0px">
+                    <h3 style="margin-top: 30px; text-align: center;">Digital Billboards</h3>
+                    <img src="images/WW/ThinBillboardWWAd.png" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                    <p style="font-size: 0.75em;"><a style="font-weight: lighter"
+                            href="https://graphicgoogle.com/free-sky-outdoor-billboard-mockup-for-advertisement-vol-3/">Mockup
+                            by Graphic Google.</a></p><br>
+
+                    <div class="slideflex" style="padding: 0px; margin-top: 30px">
+                        <img src="images/WW/ThickBillboardWWAd.png" onclick="openModal();currentSlide(2)"
+                            class="hover-shadow">
+                    </div>
+                    <p style="font-size: 0.75em;"><a style="font-weight: lighter"
+                            href="https://www.freepik.com/free-psd/blank-billboard-mockup_2736946.htm#page=4&query=billboard%20mockup&position=7&from_view=search&track=ais">Mockup
+                            by rawpixel.com</a> on Freepik.</p>
+                </div>
+
+                <h3 style="text-align: center; margin-bottom: 0px;">Transit Shelter Ad</h3>
+                <div class="wwslidesflexbeside">
+                    <div class="slideflex" style="padding: 0px">
+                        <img src="images/WW/TSAMockupCropped.png" onclick="openModal();currentSlide(3)"
+                            class="hover-shadow" alt="Transit Shelter Ad Mockup" loading = "lazy">
+                        
+
+                    </div>
+
+                    <div class="slideflex" style="padding: 0px">
+                        <img src="images/WW/WW TSA Poster - Final.png" onclick="openModal();currentSlide(4)"
+                            class="hover-shadow" alt="Transit Shelter Ad" loading = "lazy">
+
+                    </div>
+                    <p style="font-size: 0.75em"><a style="font-weight: lighter"
+                        href="https://www.freepik.com/free-photo/bus-stop-with-blank-billboard_1460249.htm#query=transit%20shelter%20ad&position=3&from_view=search&track=ais">Mockup
+                        by Freepik.</a></p>
+                </div>
+                <h3 style="text-align: center">Posters</h3>
+                <div class="slideflex" style="padding: 0px">
+                    <img src="images/WW/WWPostersMockup.png" style="margin-top: -30px"
+                        onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Tent Card" loading = "lazy">
+                    <p style="font-size: 0.75em"><a style="font-weight: lighter"
+                            href="https://www.freepik.com/free-psd/photo-frames-mockup_3384627.htm#page=5&query=poster%20ad%20mockup&position=12&from_view=search&track=ais">Mockup
+                            by rawpixel.com</a> on Freepik.</p>
+                </div>
+
+                <h3 style="text-align: center">Tent Card</h3>
+                <div class="slideflex" style="padding: 0px">
+                    <img src="images/WW/TentCardMockup.png" style="margin-top: -30px"
+                        onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Tent Card" loading = "lazy">
+                        <p style="font-size: 0.75em"><a style="font-weight: lighter"
+                            href="https://www.behance.net/gallery/179871543/Table-Tent-or-Table-Card-Mockup">Mockup from Behance.</a></p>
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="modal-content">
+
+                    <div class="mySlidess">
+                        <img src="images/WW/Walk_Wheel Digital Billboard - 1056x288-02.jpg" alt="Digital Billboard">
+                    </div>
+
+                    <div class="mySlidess">
+                        <img src="images/WW/Walk_Wheel Digital Billboard - 1664x832-02.jpg" alt="Digital Billboard">
+                    </div>
+
+                    <div class="mySlidess">
+                        <img src="images/WW/WW TSA Poster - Final.png" alt="Transit Shelter Ad">
+                    </div>
+
+                    <div class="mySlidess">
+                        <img src="images/WW/WW TSA Poster - Final.png" alt="Transit Shelter Ad">
+                    </div>
+
+                    <div class="mySlidess">
+                        <img src="images/WW/WWPostersMockup.png" alt="Posters">
+                    </div>
+
+                    <div class="mySlidess">
+                        <img src="images/WW/WWtentcards.png" alt="Tent Card">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption" style="color:rgb(255, 255, 255)"></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="misc-text-wrapper">
+                <h2>Campaign Overview</h2>
+                <p>Organization: McMaster Children's Hospital Foundation
+                    <br>Event: MacKids Walk & Wheel
+                    <br>Event Logo by: Derek Fryer
+                    <br>Photography by: Carole & Roy Timm
+                    <br>Software: Adobe Illustrator
+                </p>
+                <h3>About</h3>
+                <p>MacKids Walk & Wheel is an annual fundraising event run in support of McMaster Children's Hospital
+                    Foundation. The event is jam-packed with family fun and includes bike rides for children, an
+                    all-ages walk, bouncy castles, face painting, and more. I designed several marketing materials for
+                    the event including two digital billboards, a transit shelter ad, two posters, and a tent
+                    card. These were displayed inside McMaster Children's Hospital and around the city of Hamilton.
+
+                <h3>The Goal</h3>
+                <p>The objective of the campaign was to raise awareness for the event and encourage registrations and
+                    fundraising. The target audience included patients of McMaster Children's Hospital and their
+                    families, as well as other Hamilton residents interested in supporting the hospital.
+                    The designs should be visually consistent, represent the fun atmosphere of the event, and deliver
+                    the information in a clear and logical manner.
+                </p>
+                <h3>Design</h3>
+                <p>The information on the designs was organized in the following order:
+                <ul>
+                    <li><b>What:</b> Walk & Wheel</li>
+                    <li><b>When:</b> Saturday, June 3, 2023</li>
+                    <li><b>Where:</b> Bayfront Park</li>
+                    <li><b>Why:</b> To make a meaningful impact for patients and their families.</li>
+                    <li><b>How:</b> Scan the QR code or visit the website.</li>
+                </ul>
+                The layout was carefully adjusted to suit the dimensions of each piece and ensure a visually balanced
+                result while retaining the hierarchy of information. Bright colour blocking was used for the background to
+                catch the eye of children and families and to communicate the vibrant and exciting feeling of the event.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlidess");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
+
+<button onclick="topFunction()" id="Topbutton" title="Back to top"
+style="background-image: url(images/Branding/Topbutton.png)"></button>
+</body>
+
+<script>
+let mybutton = document.getElementById("Topbutton");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+} else {
+    mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+} 
+</script>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <title>Jenna Z Graphic Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="name-wrapper">
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="illustrations.html">Illustrations</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="vert-flex-wrapper">
+            
+            <img src="images/StratComm/StratCommCardMockup.png" width="960px" style="margin-top: 30px">
+            <img src="images/StratComm/StratcommLogoFinalBG.png" width="960px" style="margin-top: 30px;">
+            <img src="images/StratComm/Stratcomm.jpg" width="960px" style="margin-top: 30px;">
+            
+            <div class="misc-text-wrapper">
+                <h2>Project Overview</h2>
+                <p style="padding-top:10px">Organization: The Communications & Media Arts Society
+                    <br>Typography: Designed in collaboration with Landis Clark-Smith
+                    <br>Software: Adobe Illustrator
+                </p>
+                <h3>About</h3>
+                <p>StratComm is an annual strategic communications competition managed by a team of students within the Communications & Media Arts Society. Communications and Media Arts students are paired with local business owners and create marketing and communications plans for the business, some of which are actually implemented. I was tasked with the creation of a fresh logo for the competition.</p>
+                <h3>The Goal</h3>
+                <p>The direction for the logo was that it should communicate the opportunity the competition offers for networking, connections, teamwork, and collaboration. It should also be clean and modern. 
+                </p>
+                <h3>Design</h3>
+                <p>The icon was inspired by simplified network icons that make use of lines and circles to visually connect nodes. This is intuitively understood as a representation of a network, making it effective imagery to communicate the chance to expand one's professional network by participating in the competition. The inner circle of the logo acts as a globe shape while also containing an "S", which stands for StratComm. The components of the "S", along with the network nodes, also form two simplified people shaking hands. This represents the teamwork involved in the competition. The outer circle connects the two heads of the people, which depicts the sharing of ideas and collaborative planning.
+                    <br><br><img src="images/StratComm/SCLogoMeaning-08.png">
+ </p>
+                </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="Topbutton" title="Back to top"
+style="background-image: url(images/Branding/Topbutton.png)"></button>
+</body>
+
+<script>
+    let mybutton = document.getElementById("Topbutton");
+    
+    window.onscroll = function () { scrollFunction() };
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+    
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    } 
+    </script>
+
+</html>

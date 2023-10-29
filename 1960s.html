@@ -2,24 +2,49 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/Z-favicon.ico" />
-    <title>1960s - Psychedelia</title>
-    <link rel="stylesheet" href="https://use.typekit.net/nny3iyj.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Jenna Z Graphic Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="tt-title">
-            <div class="tt-title-link-wrapper">
-                <a href="timetonic.html">Time Tonic</a>
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="name-wrapper">
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="illustrations.html">Illustrations</a>
+                </div>
             </div>
         </div>
         <div class="vert-flex-wrapper">
+
+            <h1><a href="timetonic.html">Time Tonic</a></h1>
             
-            <img src="images/1960s-Mockup.png" width="960px" alt="1960s - Psychedelia">
-            <img src="images/1960s-Design.png" width="960px" style="margin-top: 30px;">
+            <img src="images/TimeTonic/1960s-Mockup.png" width="960px" alt="1960s - Psychedelia">
+            <img src="images/TimeTonic/1960s-Design.png" width="960px" style="margin-top: 30px;">
             <div class="misc-text-wrapper">
                 <h2>1960s - Psychedelia</h2>
                 <p style="padding-top:10px; padding-bottom:200px;">Major social and political events took place in the 1960s which sparked a culture of rebellion distinct to the prim and proper 50s culture. The Civil rights movements and the beginning of a second wave of feminism meant people were beginning to defy the longstanding conservative societal norms. This rebellious mindset was prominent in the music scene, where the rock and roll lifestyle entranced youth, drawing them to experiment with drug usage. 
@@ -28,6 +53,32 @@
             </div>
         </div>
     </div>
+
+    <div class="TTbuttonBackground">
+    <button onclick="window.location.href='1970s.html'" id="TTbuttonRight">1970s &#8250;</button>
+</div>
+
+    <button onclick="topFunction()" id="Topbutton" title="Back to top"
+    style="background-image: url(images/Branding/Topbutton.png)"></button>
 </body>
+
+<script>
+let mybutton = document.getElementById("Topbutton");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+} 
+</script>
 
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Z-favicon.ico"/>
-    <title>About - Jenna Zielinski Art</title>
+    <title>About - Jenna Z Graphic Design</title>
     <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css"> 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,7 @@
 
             <div class="left-side">
                 <div class="name-wrapper">
-                    <a href="index.html"><img src="images/FullLogo-New.png"></a>
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="nav-link-wrapper">
-                    <a href="commissions.html">Commissions</a>
+                    <a href="illustrations.html">Illustrations</a>
                 </div>
             </div>
         </div>
@@ -47,14 +47,37 @@
                 </div>
 
                 <div class="profile-content-wrapper">
-                    <p><div class="pbold">Jenna Zielinski</div> is a Graphic Designer and Illustrator from Whitby, Ontario. She graduated <i>summa cum laude</i> from McMaster University with a Bachelor of Arts in Multimedia and Cognitive Science of Language. 
+                    <p><div class="pbold">Jenna Zielinski</div> is a Graphic Designer from Whitby, Ontario. She graduated <i>summa cum laude</i> from McMaster University with a Bachelor of Arts in Multimedia and Cognitive Science of Language. 
 
-                        <br><br>In her final year of university, Jenna worked as a Teaching Assistant for the course Making Art and Understanding Technology & Images. Following graduation, she participated in the Humanities Career Apprenticeship Program. This involved a year-long engagement at Hamilton Health Sciences Foundation where Jenna held the role of Marketing Coordinator. In that role, she was responsible for a broad range of creative tasks including the design of social media graphics, digital ads, and posters. She also wrote copy and assisted with website design and maintenance. 
+                        <br><br>During her final year of university, Jenna worked as a Teaching Assistant for the course Making Art and Understanding Technology & Images and volunteered as a Graphic Designer for the Communications & Media Arts Society. Following graduation, she participated in the Humanities Career Apprenticeship Program. This involved a year-long engagement at Hamilton Health Sciences Foundation where Jenna held the role of Marketing Coordinator. In that role, she was responsible for a broad range of creative tasks including the design of social media graphics, digital ads, posters, and more. She also wrote copy and assisted with website design and maintenance. 
                     </p>
 
                 </div>
             </div>
     </div>
+
+    <button onclick="topFunction()" id="Topbutton" title="Back to top"
+    style="background-image: url(images/Branding/Topbutton-red.png)"></button>
+
 </body>
+
+<script>
+    let mybutton = document.getElementById("Topbutton");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    } 
+</script>
 
 </html>

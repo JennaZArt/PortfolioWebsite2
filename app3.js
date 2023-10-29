@@ -1,4 +1,4 @@
-const url = 'https://script.google.com/macros/s/AKfycby2GIAcRsGGg73mDMkn4_f9mngLC8244IJwoFzY9tG9jMLT0D4DxFscnIAHgMSHQXhLjg/exec';
+const url = 'https://script.google.com/macros/s/AKfycbys59w1shk7nJm5FH2FT26bCIRIvlHB0T4RPnesrasxuQPt9LCX5_Xt9z1cBsrqlPcd/exec';
 
 const myForm = document.querySelector('#myForm');
 
@@ -7,12 +7,6 @@ const myName = document.querySelector('#name');
 const myEmail = document.querySelector('#email');
 
 const myMessage = document.querySelector('#message');
-
-myName.value = '123456';
-
-myEmail.value = '123456@gmail.com';
-
-myMessage.value = 'Hello World';
 
 myForm.addEventListener('submit', submitter);
 
@@ -26,15 +20,15 @@ function submitter(e) {
 
    let message = '';
 
-   if (myName.value.length < 5) {
+   if (myName.value.length < 3) {
 
        myName.style.borderColor = 'red';
 
-       message += `<br>Name needs to be 5 characters`;
+       message += `<br>Name needs to be 3 characters`;
 
    }
 
-   if (myEmail.value.length < 5) {
+   if (myEmail.value.length < 3) {
 
        myEmail.style.borderColor = 'red';
 
@@ -123,3 +117,8 @@ function addSendMailGET(data){
    })
 
 }
+
+
+function sayThanks() {
+    document.getElementById("myForm").innerHTML = "<h3>Thank you!</h3>";
+  } 

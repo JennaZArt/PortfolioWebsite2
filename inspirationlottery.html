@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Jenna Z Graphic Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vsc2eql.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="name-wrapper">
+                    <a href="index.html"><img src="images/Branding/Logo.png"></a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="illustrations.html">Illustrations</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="vert-flex-wrapper">
+            <video width="100%" height="100%" controls>
+                <source src="images/IL/AnimatedMockupH.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video width="100%" height="100%" controls>
+                <source src="images/IL/Digital Screen Ad for Residential.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="sidebyside">
+
+                <video style="width: 55%; height: 55%; margin: auto;" controls>
+                    <source src="images/IL/AnimatedMockupV.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video style="width: 37%; height: 37%; margin: auto;" controls>
+                    <source src="images/IL/Digital Screen Ad for Restobars MP4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="misc-text-wrapper">
+                <h2>Project Overview</h2>
+                <p style="padding-top:10px">Organization: Hamilton Health Sciences Foundation
+                    <br>Creative concept by: 20Eight Digital Marketing Agency
+                    <br>Software: Adobe After Effects, Adobe Premiere Pro
+
+                </p>
+                <h3>About</h3>
+                <p>The 50/50 Inspiration Lottery allows individuals to purchase tickets for the chance to win a cash
+                    prize while supporting the hospitals associated with Hamilton Health Sciences. To advertise the
+                    November 2022 Inspiration Lottery, I created two animated ads. These ads were featured on digital
+                    screens in restobars and residential buildings across Hamilton. In addition to these animated ads, I
+                    was also responsible for the design of five flights of display ads and Meta ads and headers for
+                    emails. This contributed to the November 2022 Inspiration Lottery overachieving the revenue goal by
+                    23%, raising $104,750 total.
+                </p>
+                <h3>The Goal</h3>
+                <p>Research has shown that audiences need to view an ad approximately 7 times before they take action to
+                    buy. The goal of the digital screen ads was to provide another avenue to reach potential buyers and
+                    increase their number of impressions, ultimately hoping to convert impressions to ticket purchases.
+                </p>
+                <h3>Design</h3>
+                <p>20Eight's data from previous lotteries concluded that people respond best to ads with human faces and money. These were the two key images included. The animations were kept minimal and slow-paced to avoid them becoming overwhelming and distracting. The most important text components are static and never leave the screen (the tagline and the call to action), while the less crucial information slides in and changes every few seconds.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <button onclick="topFunction()" id="Topbutton" title="Back to top"
+        style="background-image: url(images/Branding/Topbutton.png)"></button>
+</body>
+
+<script>
+    let mybutton = document.getElementById("Topbutton");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    } 
+</script>
+
+</html>
