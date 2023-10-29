@@ -90,11 +90,11 @@ ul {
 /* Name Styles */
 
 .image {
-  image-rendering: auto;
+  image-rendering: optimizeQuality;
 }
 
 .name-wrapper {
-  image-rendering: auto;
+  image-rendering: optimizeQuality;
 
 }
 
