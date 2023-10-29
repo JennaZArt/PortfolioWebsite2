@@ -89,13 +89,8 @@ ul {
 
 /* Name Styles */
 
-.image {
-  image-rendering: optimizeQuality;
-}
-
-.name-wrapper {
-  image-rendering: optimizeQuality;
-
+.name-wrapper img {
+  height: 90px;
 }
 
 .my-title {
