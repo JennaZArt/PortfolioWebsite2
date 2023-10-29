@@ -89,8 +89,12 @@ ul {
 
 /* Name Styles */
 
+.image {
+  image-rendering: auto;
+}
+
 .name-wrapper {
-  font-size: 30px;
+  image-rendering: auto;
 
 }
 
