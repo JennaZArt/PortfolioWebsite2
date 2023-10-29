@@ -626,9 +626,13 @@ img.hover-shadow {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 25px;
+  padding: 30px;
+  background-size: 60px;
   background-color: transparent;
+}
 
+#Topbutton background-image {
+  height: 50px;
 }
 
 /* Time Tonic Styles */
